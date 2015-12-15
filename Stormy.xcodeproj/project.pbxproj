@@ -12,6 +12,8 @@
 		E2625C6B1C20761500693B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2625C691C20761400693B6D /* Main.storyboard */; };
 		E2625C6D1C20761500693B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2625C6C1C20761500693B6D /* Assets.xcassets */; };
 		E2625C701C20761500693B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2625C6E1C20761500693B6D /* LaunchScreen.storyboard */; };
+		E2625C7C1C20783400693B6D /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2625C7B1C20783400693B6D /* CurrentWeather.plist */; };
+		E2625C7E1C207DEE00693B6D /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2625C7D1C207DEE00693B6D /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E2625C6C1C20761500693B6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2625C6F1C20761500693B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2625C711C20761500693B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2625C7B1C20783400693B6D /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
+		E2625C7D1C207DEE00693B6D /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				E2625C651C20761400693B6D /* AppDelegate.swift */,
 				E2625C671C20761400693B6D /* ViewController.swift */,
+				E2625C7D1C207DEE00693B6D /* CurrentWeather.swift */,
 				E2625C691C20761400693B6D /* Main.storyboard */,
 				E2625C6C1C20761500693B6D /* Assets.xcassets */,
 				E2625C6E1C20761500693B6D /* LaunchScreen.storyboard */,
 				E2625C711C20761500693B6D /* Info.plist */,
+				E2625C7B1C20783400693B6D /* CurrentWeather.plist */,
 			);
 			path = Stormy;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2625C701C20761500693B6D /* LaunchScreen.storyboard in Resources */,
+				E2625C7C1C20783400693B6D /* CurrentWeather.plist in Resources */,
 				E2625C6D1C20761500693B6D /* Assets.xcassets in Resources */,
 				E2625C6B1C20761500693B6D /* Main.storyboard in Resources */,
 			);
@@ -137,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2625C681C20761400693B6D /* ViewController.swift in Sources */,
+				E2625C7E1C207DEE00693B6D /* CurrentWeather.swift in Sources */,
 				E2625C661C20761400693B6D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
