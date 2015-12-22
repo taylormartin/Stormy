@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24BA0011C28520F00E78138 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BA0001C28520F00E78138 /* NetworkOperation.swift */; };
+		E24BA0031C28765600E78138 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BA0021C28765600E78138 /* ForecastService.swift */; };
 		E2625C661C20761400693B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2625C651C20761400693B6D /* AppDelegate.swift */; };
 		E2625C681C20761400693B6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2625C671C20761400693B6D /* ViewController.swift */; };
 		E2625C6B1C20761500693B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2625C691C20761400693B6D /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E24BA0001C28520F00E78138 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		E24BA0021C28765600E78138 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 		E2625C621C20761400693B6D /* Stormy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stormy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2625C651C20761400693B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2625C671C20761400693B6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				E2625C671C20761400693B6D /* ViewController.swift */,
 				E2625C7D1C207DEE00693B6D /* CurrentWeather.swift */,
 				E2625C691C20761400693B6D /* Main.storyboard */,
+				E24BA0001C28520F00E78138 /* NetworkOperation.swift */,
+				E24BA0021C28765600E78138 /* ForecastService.swift */,
 				E2625C6C1C20761500693B6D /* Assets.xcassets */,
 				E2625C6E1C20761500693B6D /* LaunchScreen.storyboard */,
 				E2625C711C20761500693B6D /* Info.plist */,
@@ -143,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24BA0011C28520F00E78138 /* NetworkOperation.swift in Sources */,
 				E2625C681C20761400693B6D /* ViewController.swift in Sources */,
 				E2625C7E1C207DEE00693B6D /* CurrentWeather.swift in Sources */,
+				E24BA0031C28765600E78138 /* ForecastService.swift in Sources */,
 				E2625C661C20761400693B6D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +301,7 @@
 				E2625C761C20761500693B6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
