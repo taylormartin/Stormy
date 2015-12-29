@@ -16,6 +16,8 @@
 		E2625C701C20761500693B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2625C6E1C20761500693B6D /* LaunchScreen.storyboard */; };
 		E2625C7C1C20783400693B6D /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2625C7B1C20783400693B6D /* CurrentWeather.plist */; };
 		E2625C7E1C207DEE00693B6D /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2625C7D1C207DEE00693B6D /* CurrentWeather.swift */; };
+		E2A2088D1C2A0FF300992B37 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A2088B1C2A0FF300992B37 /* Fabric.framework */; };
+		E2A2088E1C2A0FF300992B37 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A2088C1C2A0FF300992B37 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		E2625C711C20761500693B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2625C7B1C20783400693B6D /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
 		E2625C7D1C207DEE00693B6D /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		E2A2088B1C2A0FF300992B37 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		E2A2088C1C2A0FF300992B37 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A2088E1C2A0FF300992B37 /* Crashlytics.framework in Frameworks */,
+				E2A2088D1C2A0FF300992B37 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +78,8 @@
 				E2625C6E1C20761500693B6D /* LaunchScreen.storyboard */,
 				E2625C711C20761500693B6D /* Info.plist */,
 				E2625C7B1C20783400693B6D /* CurrentWeather.plist */,
+				E2A2088B1C2A0FF300992B37 /* Fabric.framework */,
+				E2A2088C1C2A0FF300992B37 /* Crashlytics.framework */,
 			);
 			path = Stormy;
 			sourceTree = "<group>";
@@ -86,6 +94,7 @@
 				E2625C5E1C20761400693B6D /* Sources */,
 				E2625C5F1C20761400693B6D /* Frameworks */,
 				E2625C601C20761400693B6D /* Resources */,
+				E2A2088A1C2A0FAA00992B37 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -108,7 +117,7 @@
 				TargetAttributes = {
 					E2625C611C20761400693B6D = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 5NK52JFTKZ;
+						DevelopmentTeam = XHAY7YR4B5;
 					};
 				};
 			};
@@ -143,6 +152,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E2A2088A1C2A0FAA00992B37 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run c47ea4a1f482a0b94a080bb4652283f6d231899b 240ecea53df6d6668f43eb1bc8a443feba11bd69651bac8094b1bc5205783cd9";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2625C5E1C20761400693B6D /* Sources */ = {
@@ -264,9 +289,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Stormy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = taylormartin.Stormy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeandbuild.Stormy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -275,9 +305,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Stormy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = taylormartin.Stormy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeandbuild.Stormy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

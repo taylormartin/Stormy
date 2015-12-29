@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     
     private let forecastAPIKey = "9466d082aa862b4002a3342da46bb71b"
     let coordinate: (lat: Double, long: Double) = (37.8267, -122.423)
+    let transBlue = UIColor(red: 116/255.0, green: 201/255.0, blue: 1, alpha: 0.75)
+    let solidBlue = UIColor(red: 116/255.0, green: 201/255.0, blue: 1, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,8 +46,10 @@ class ViewController: UIViewController {
         refreshButton?.hidden = on
         if on {
             activityIndicator?.startAnimating()
+            view.backgroundColor = transBlue
         } else {
             activityIndicator?.stopAnimating()
+            view.backgroundColor = solidBlue
         }
     }
     
