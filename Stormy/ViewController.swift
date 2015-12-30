@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Crashlytics
 
 class ViewController: UIViewController {
     
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        CLSLogv("Username %@", getVaList(["tmartin"]))
         retrieveWeatherForecast()
     }
 
@@ -47,6 +49,8 @@ class ViewController: UIViewController {
         if on {
             activityIndicator?.startAnimating()
             view.backgroundColor = transBlue
+            CLSLogv("crashed at line %d", getVaList([52]))
+            Crashlytics.sharedInstance().crash()
         } else {
             activityIndicator?.stopAnimating()
             view.backgroundColor = solidBlue

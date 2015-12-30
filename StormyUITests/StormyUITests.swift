@@ -30,8 +30,8 @@ class StormyUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testViewControllerLoad() {
-    
+    func blankTest() {
+        
     }
     
 }
